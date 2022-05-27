@@ -1,3 +1,10 @@
+:root {
+  --grey: #2E4057;
+  --blue: #083D77;
+  --red: #DA4167;
+  --white: #e6eaf0;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,218 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+.products-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--grey);
+}
+.products-heading h2 {
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.products-heading p {
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+
+
+
+.hero-banner-container {
+  padding: 100px 40px;
+  background-color: var(--white);
+  position: relative;
+}
+.hero-banner-container p {
+  margin-bottom: 0;
+}
+.hero-banner-container h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+}
+.hero-banner-container h1 {
+  margin: -20px;
+  padding: 0;
+  font-size: 10rem;
+  color: white;
+}
+.hero-banner-container img {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  height: 20rem;
+}
+.hero-banner-container button {
+  background-color: var(--red);
+  color: white;
+}
+
+.desc {
+  width: min-content;
+  margin-left: auto;
+  color: var(--grey);
+}
+.desc h5 {
+  margin-bottom: 0;
+  margin-left: auto;
+  width: min-content;
+}
+.desc p {
+  font-weight: 100;
+  margin-left: auto;
+  width: max-content;
+}
+
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: inline-block;
+  margin: 10px;
+  overflow: hidden;
+  transition: transform .3s ease-in-out;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}
+.product-card img {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  object-fit: contain;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.product-name {
+  margin: 5px 0 10px 0;
+  font-weight: 500;
+}
+.product-price {
+  margin: 0;
+  font-weight: 8 00;
+}
+
+
+
+
+.banner-desc {
+  margin: 75px 0 75px 0;
+  padding: 50px;
+  background-color: var(--red);
+  border-radius: 50px;
+  display: flex;
+  position: relative;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left p {
+  margin: 0;
+}
+.left h3 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 1000;
+}
+
+.right {
+  text-align: end;
+}
+.right h3 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.right button {
+  background-color: white;
+  color: var(--red);
+}
+
+.banner-desc img {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+
+
+
+.navbar-container {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--grey);
+  font-weight: 100;
+  font-stretch: expanded;
+}
+
+.cart-icon {
+  padding: 3px 5px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.cart-item-qty {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--red);
+  color: white;
+  font-size: .2rem;
+}
+
+
+
+
+.footer-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--grey);
+}
+.footer-container p {
+  margin: 10px;
+}
+
+.icons {
+  font-size: 1.5rem;
 }
