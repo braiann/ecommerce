@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -234,4 +235,120 @@ button {
 
 .icons {
   font-size: 1.5rem;
+}
+
+.product-detail-container {
+  margin: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'image-container product-detail-desc'
+    'small-images-container .'
+    'maylike-products-wrapper maylike-products-wrapper';
+}
+
+.image-container {
+  margin: 20px;
+  grid-area: image-container;
+  width: 500px;
+  justify-self: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  aspect-ratio: 1;
+}
+.product-detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-detail-desc {
+  grid-area: product-detail-desc;
+  justify-self: start;
+}
+.product-detail-desc h2 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.reviews {
+  display: inline-block;
+  color: var(--red);
+}
+.review-count {
+  display: inline-block;
+}
+
+.product-detail-desc h4 {
+  margin: 10px 0;
+}
+
+.price {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--red);
+}
+
+.quantity-desc {
+  border: 1px solid var(--white);
+  display: inline-block;
+}
+.quantity-desc span {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--grey);
+}
+.quantity-desc .minus, .quantity-desc .plus {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.buttons .add-to-cart {
+  margin: 20px 10px 10px 0;
+  padding: 9px;
+  border: 1px solid var(--red);
+  color: var(--red);
+  background-color: transparent;
+}
+.buttons .buy-now {
+  background-color: var(--red);
+  color: white;
+}
+
+.maylike-products-wrapper {
+  grid-area: maylike-products-wrapper;
+}
+
+.small-image {
+  margin-right: 10px;
+  width: 100px;
+  object-fit: contain;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+}
+
+.selected-image {
+  border: 1px solid var(--red);
+}
+
+.maylike-products-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100vw;
+}
+.maylike-products-wrapper h2 {
+  color: var(--grey);
+  overflow-x: hidden;
+}
+
+.maylike-products-container {
+  display: flex;
+  width: calc(100vw - 150px);
+  overflow: scroll;
 }
